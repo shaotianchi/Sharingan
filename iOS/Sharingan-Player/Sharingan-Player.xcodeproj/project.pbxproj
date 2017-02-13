@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ECB5EC51E51564D00A72362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EC41E51564D00A72362 /* AppDelegate.swift */; };
+		7ECB5EC71E51564D00A72362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EC61E51564D00A72362 /* ViewController.swift */; };
+		7ECB5ECA1E51564D00A72362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB5EC81E51564D00A72362 /* Main.storyboard */; };
+		7ECB5ECC1E51564D00A72362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB5ECB1E51564D00A72362 /* Assets.xcassets */; };
+		7ECB5ECF1E51564D00A72362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB5ECD1E51564D00A72362 /* LaunchScreen.storyboard */; };
+		7ECB5ED91E5156CF00A72362 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECB5ED81E5156CF00A72362 /* IOKit.framework */; };
+		7ECB5EDD1E5157DE00A72362 /* UITouch+Synthesize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EDC1E5157DE00A72362 /* UITouch+Synthesize.m */; };
+		7ECB5EDF1E515A3200A72362 /* SRGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EDE1E515A3200A72362 /* SRGPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ECA2B211E5180600082DD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ECA2B1D1E5180600082DD28 /* SharinganModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7ECA2B081E51803F0082DD28;
+			remoteInfo = SharinganModel;
+		};
+		7ECA2B231E5181760082DD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ECA2B1D1E5180600082DD28 /* SharinganModel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ECA2B071E51803F0082DD28;
+			remoteInfo = SharinganModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7ECA2B1D1E5180600082DD28 /* SharinganModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SharinganModel.xcodeproj; path = ../SharinganModel/SharinganModel.xcodeproj; sourceTree = "<group>"; };
+		7ECB5EC11E51564D00A72362 /* Sharingan-Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sharingan-Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECB5EC41E51564D00A72362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ECB5EC61E51564D00A72362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7ECB5EC91E51564D00A72362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ECB5ECB1E51564D00A72362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ECB5ECE1E51564D00A72362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ECB5ED01E51564D00A72362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECB5ED81E5156CF00A72362 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		7ECB5EDA1E5157DE00A72362 /* Sharingan-Player-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sharingan-Player-Bridging-Header.h"; sourceTree = "<group>"; };
+		7ECB5EDB1E5157DE00A72362 /* UITouch+Synthesize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+Synthesize.h"; sourceTree = "<group>"; };
+		7ECB5EDC1E5157DE00A72362 /* UITouch+Synthesize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+Synthesize.m"; sourceTree = "<group>"; };
+		7ECB5EDE1E515A3200A72362 /* SRGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ECB5EBE1E51564D00A72362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECB5ED91E5156CF00A72362 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ECA2B1E1E5180600082DD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2B221E5180600082DD28 /* SharinganModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ECB5EB81E51564D00A72362 = {
+			isa = PBXGroup;
+			children = (
+				7ECB5EC31E51564D00A72362 /* Sharingan-Player */,
+				7ECB5EC21E51564D00A72362 /* Products */,
+				7ECB5ED71E5156CF00A72362 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7ECB5EC21E51564D00A72362 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ECB5EC11E51564D00A72362 /* Sharingan-Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ECB5EC31E51564D00A72362 /* Sharingan-Player */ = {
+			isa = PBXGroup;
+			children = (
+				7ECB5ED61E51568600A72362 /* Player */,
+				7ECB5EC41E51564D00A72362 /* AppDelegate.swift */,
+				7ECB5EC61E51564D00A72362 /* ViewController.swift */,
+				7ECB5EC81E51564D00A72362 /* Main.storyboard */,
+				7ECB5ECB1E51564D00A72362 /* Assets.xcassets */,
+				7ECB5ECD1E51564D00A72362 /* LaunchScreen.storyboard */,
+				7ECB5ED01E51564D00A72362 /* Info.plist */,
+			);
+			path = "Sharingan-Player";
+			sourceTree = "<group>";
+		};
+		7ECB5ED61E51568600A72362 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				7ECB5EDB1E5157DE00A72362 /* UITouch+Synthesize.h */,
+				7ECB5EDC1E5157DE00A72362 /* UITouch+Synthesize.m */,
+				7ECB5EDA1E5157DE00A72362 /* Sharingan-Player-Bridging-Header.h */,
+				7ECB5EDE1E515A3200A72362 /* SRGPlayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		7ECB5ED71E5156CF00A72362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2B1D1E5180600082DD28 /* SharinganModel.xcodeproj */,
+				7ECB5ED81E5156CF00A72362 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ECB5EC01E51564D00A72362 /* Sharingan-Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ECB5ED31E51564D00A72362 /* Build configuration list for PBXNativeTarget "Sharingan-Player" */;
+			buildPhases = (
+				7ECB5EBD1E51564D00A72362 /* Sources */,
+				7ECB5EBE1E51564D00A72362 /* Frameworks */,
+				7ECB5EBF1E51564D00A72362 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ECA2B241E5181760082DD28 /* PBXTargetDependency */,
+			);
+			name = "Sharingan-Player";
+			productName = "Sharingan-Player";
+			productReference = 7ECB5EC11E51564D00A72362 /* Sharingan-Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ECB5EB91E51564D00A72362 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shao Tianchi";
+				TargetAttributes = {
+					7ECB5EC01E51564D00A72362 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JL5DG96Y3E;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7ECB5EBC1E51564D00A72362 /* Build configuration list for PBXProject "Sharingan-Player" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ECB5EB81E51564D00A72362;
+			productRefGroup = 7ECB5EC21E51564D00A72362 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7ECA2B1E1E5180600082DD28 /* Products */;
+					ProjectRef = 7ECA2B1D1E5180600082DD28 /* SharinganModel.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7ECB5EC01E51564D00A72362 /* Sharingan-Player */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7ECA2B221E5180600082DD28 /* SharinganModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SharinganModel.framework;
+			remoteRef = 7ECA2B211E5180600082DD28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ECB5EBF1E51564D00A72362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECB5ECF1E51564D00A72362 /* LaunchScreen.storyboard in Resources */,
+				7ECB5ECC1E51564D00A72362 /* Assets.xcassets in Resources */,
+				7ECB5ECA1E51564D00A72362 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ECB5EBD1E51564D00A72362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECB5EC71E51564D00A72362 /* ViewController.swift in Sources */,
+				7ECB5EC51E51564D00A72362 /* AppDelegate.swift in Sources */,
+				7ECB5EDD1E5157DE00A72362 /* UITouch+Synthesize.m in Sources */,
+				7ECB5EDF1E515A3200A72362 /* SRGPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ECA2B241E5181760082DD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SharinganModel;
+			targetProxy = 7ECA2B231E5181760082DD28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ECB5EC81E51564D00A72362 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ECB5EC91E51564D00A72362 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7ECB5ECD1E51564D00A72362 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ECB5ECE1E51564D00A72362 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ECB5ED11E51564D00A72362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7ECB5ED21E51564D00A72362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ECB5ED41E51564D00A72362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JL5DG96Y3E;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = "Sharingan-Player/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rainbow.Sharingan-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sharingan-Player/Player/Sharingan-Player-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7ECB5ED51E51564D00A72362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JL5DG96Y3E;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = "Sharingan-Player/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rainbow.Sharingan-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sharingan-Player/Player/Sharingan-Player-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ECB5EBC1E51564D00A72362 /* Build configuration list for PBXProject "Sharingan-Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECB5ED11E51564D00A72362 /* Debug */,
+				7ECB5ED21E51564D00A72362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ECB5ED31E51564D00A72362 /* Build configuration list for PBXNativeTarget "Sharingan-Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECB5ED41E51564D00A72362 /* Debug */,
+				7ECB5ED51E51564D00A72362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ECB5EB91E51564D00A72362 /* Project object */;
+}

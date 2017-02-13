@@ -8,14 +8,14 @@
 
 import UIKit
 
-class SRGTouch: NSObject, NSCoding {
-    var point: CGPoint = .zero
-    var phase: UITouchPhase
-    var viewIdentifier: String = ""
-    var haveView: Bool = false
-    var deltPoint: CGPoint = .zero
+public class SRGTouch: NSObject, NSCoding {
+    public var point: CGPoint = .zero
+    public var phase: UITouchPhase
+    public var viewIdentifier: String = ""
+    public var haveView: Bool = false
+    public var deltPoint: CGPoint = .zero
     
-    init(touch: UITouch) {
+    public init(touch: UITouch) {
         if let view = touch.view {
             self.point = touch.location(in: view)
             self.viewIdentifier = view.identifier
@@ -35,14 +35,14 @@ class SRGTouch: NSObject, NSCoding {
         self.phase = touch.phase
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         self.point = aDecoder.decodeCGPoint(forKey: "point")
         self.phase = UITouchPhase(rawValue: aDecoder.decodeInteger(forKey: "phase"))!
         self.viewIdentifier = aDecoder.decodeObject(forKey: "viewID") as! String
         self.haveView = aDecoder.decodeBool(forKey: "haveView")
     }
     
-    internal func encode(with aCoder: NSCoder) {
+    public func encode(with aCoder: NSCoder) {
         aCoder.encode(point, forKey: "point")
         aCoder.encode(phase.rawValue, forKey: "phase")
         aCoder.encode(viewIdentifier, forKey: "viewID")

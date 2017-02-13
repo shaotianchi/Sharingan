@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ECA2B2F1E5182F20082DD28 /* SharinganModel.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2B291E5182ED0082DD28 /* SharinganModel.xcodeproj */; };
 		7ECB5E961E51518E00A72362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5E951E51518E00A72362 /* AppDelegate.swift */; };
 		7ECB5E981E51518E00A72362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5E971E51518E00A72362 /* ViewController.swift */; };
 		7ECB5E9B1E51518F00A72362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB5E991E51518F00A72362 /* Main.storyboard */; };
 		7ECB5E9D1E51518F00A72362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB5E9C1E51518F00A72362 /* Assets.xcassets */; };
 		7ECB5EA01E51518F00A72362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECB5E9E1E51518F00A72362 /* LaunchScreen.storyboard */; };
 		7ECB5EA91E5152D400A72362 /* SRGRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EA81E5152D400A72362 /* SRGRecorder.swift */; };
-		7ECB5EAB1E51535B00A72362 /* SRGEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EAA1E51535B00A72362 /* SRGEvent.swift */; };
-		7ECB5EAD1E51539700A72362 /* SRGTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EAC1E51539700A72362 /* SRGTouch.swift */; };
-		7ECB5EAF1E5153CB00A72362 /* UIView+SRGAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EAE1E5153CB00A72362 /* UIView+SRGAddition.swift */; };
-		7ECB5EB11E51540F00A72362 /* CGPoint+ArrayLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EB01E51540F00A72362 /* CGPoint+ArrayLiteral.swift */; };
-		7ECB5EB31E51542800A72362 /* CGSize+ArrayLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EB21E51542800A72362 /* CGSize+ArrayLiteral.swift */; };
 		7ECB5EB51E5154A400A72362 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EB41E5154A400A72362 /* main.swift */; };
 		7ECB5EB71E5154B300A72362 /* SRGApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB5EB61E5154B300A72362 /* SRGApplication.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7ECA2B2D1E5182EE0082DD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ECA2B291E5182ED0082DD28 /* SharinganModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7ECA2B081E51803F0082DD28;
+			remoteInfo = SharinganModel;
+		};
+		7ECA2B301E5182F90082DD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ECA2B291E5182ED0082DD28 /* SharinganModel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ECA2B071E51803F0082DD28;
+			remoteInfo = SharinganModel;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7ECA2B291E5182ED0082DD28 /* SharinganModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SharinganModel.xcodeproj; path = ../SharinganModel/SharinganModel.xcodeproj; sourceTree = "<group>"; };
 		7ECB5E921E51518E00A72362 /* Sharingan-Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sharingan-Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECB5E951E51518E00A72362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ECB5E971E51518E00A72362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,11 +45,6 @@
 		7ECB5E9F1E51518F00A72362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECB5EA11E51518F00A72362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ECB5EA81E5152D400A72362 /* SRGRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGRecorder.swift; sourceTree = "<group>"; };
-		7ECB5EAA1E51535B00A72362 /* SRGEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGEvent.swift; sourceTree = "<group>"; };
-		7ECB5EAC1E51539700A72362 /* SRGTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGTouch.swift; sourceTree = "<group>"; };
-		7ECB5EAE1E5153CB00A72362 /* UIView+SRGAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SRGAddition.swift"; sourceTree = "<group>"; };
-		7ECB5EB01E51540F00A72362 /* CGPoint+ArrayLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+ArrayLiteral.swift"; sourceTree = "<group>"; };
-		7ECB5EB21E51542800A72362 /* CGSize+ArrayLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+ArrayLiteral.swift"; sourceTree = "<group>"; };
 		7ECB5EB41E5154A400A72362 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7ECB5EB61E5154B300A72362 /* SRGApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,17 +54,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECA2B2F1E5182F20082DD28 /* SharinganModel.xcodeproj in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ECA2B281E5182ED0082DD28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2B291E5182ED0082DD28 /* SharinganModel.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ECA2B2A1E5182ED0082DD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2B2E1E5182EE0082DD28 /* SharinganModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7ECB5E891E51518E00A72362 = {
 			isa = PBXGroup;
 			children = (
 				7ECB5E941E51518E00A72362 /* Sharingan-Recorder */,
 				7ECB5E931E51518E00A72362 /* Products */,
+				7ECA2B281E5182ED0082DD28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,11 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				7ECB5EA81E5152D400A72362 /* SRGRecorder.swift */,
-				7ECB5EAA1E51535B00A72362 /* SRGEvent.swift */,
-				7ECB5EAC1E51539700A72362 /* SRGTouch.swift */,
-				7ECB5EAE1E5153CB00A72362 /* UIView+SRGAddition.swift */,
-				7ECB5EB01E51540F00A72362 /* CGPoint+ArrayLiteral.swift */,
-				7ECB5EB21E51542800A72362 /* CGSize+ArrayLiteral.swift */,
 				7ECB5EB41E5154A400A72362 /* main.swift */,
 				7ECB5EB61E5154B300A72362 /* SRGApplication.swift */,
 			);
@@ -110,6 +132,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7ECA2B311E5182F90082DD28 /* PBXTargetDependency */,
 			);
 			name = "Sharingan-Recorder";
 			productName = "Sharingan-Recorder";
@@ -144,12 +167,28 @@
 			mainGroup = 7ECB5E891E51518E00A72362;
 			productRefGroup = 7ECB5E931E51518E00A72362 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7ECA2B2A1E5182ED0082DD28 /* Products */;
+					ProjectRef = 7ECA2B291E5182ED0082DD28 /* SharinganModel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7ECB5E911E51518E00A72362 /* Sharingan-Recorder */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7ECA2B2E1E5182EE0082DD28 /* SharinganModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SharinganModel.framework;
+			remoteRef = 7ECA2B2D1E5182EE0082DD28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7ECB5E901E51518E00A72362 /* Resources */ = {
@@ -169,20 +208,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECB5EB31E51542800A72362 /* CGSize+ArrayLiteral.swift in Sources */,
 				7ECB5EA91E5152D400A72362 /* SRGRecorder.swift in Sources */,
 				7ECB5EB51E5154A400A72362 /* main.swift in Sources */,
 				7ECB5EB71E5154B300A72362 /* SRGApplication.swift in Sources */,
-				7ECB5EAB1E51535B00A72362 /* SRGEvent.swift in Sources */,
-				7ECB5EB11E51540F00A72362 /* CGPoint+ArrayLiteral.swift in Sources */,
-				7ECB5EAD1E51539700A72362 /* SRGTouch.swift in Sources */,
 				7ECB5E981E51518E00A72362 /* ViewController.swift in Sources */,
 				7ECB5E961E51518E00A72362 /* AppDelegate.swift in Sources */,
-				7ECB5EAF1E5153CB00A72362 /* UIView+SRGAddition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ECA2B311E5182F90082DD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SharinganModel;
+			targetProxy = 7ECA2B301E5182F90082DD28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7ECB5E991E51518F00A72362 /* Main.storyboard */ = {
@@ -340,6 +382,7 @@
 				7ECB5EA61E51518F00A72362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

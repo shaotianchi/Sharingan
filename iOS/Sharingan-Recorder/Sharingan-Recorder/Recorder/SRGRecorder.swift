@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import SharinganModel
 
 public enum SRGRecorderState {
     case idle

@@ -17,7 +17,7 @@ class ViewIdentifierCache: NSObject {
     var cache: NSCache<UIView, AnyObject> = NSCache<UIView, AnyObject>()
 }
 
-extension UIView {
+public extension UIView {
     var identifier: String {
         if let cache = ViewIdentifierCache.instance.cache.object(forKey: self) {
             return cache as! String
