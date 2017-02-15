@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import WebKit
 import SharinganModel
 
 public class SRGPlayer: NSObject {
     var holdingViews:[String: UIView] = [:]
     
-    func play(event: SRGEvent, events: [SRGEvent]) {
+    public func play(event: SRGEvent, events: [SRGEvent]) {
         let touches = event.touches
         var uitouches: [UITouch] = []
         for touch in touches {
-            let viewInfo = UIView.getViewByIdentifier(identifier: touch.viewIdentifier)
-            let view = viewInfo.0!
+            var viewInfo = UIView.getViewByIdentifier(identifier: touch.viewIdentifier)
+            var view = viewInfo.0!
+            if view is UIWindow {
+                let hitTestView = view.hitTest(touch.point, with: nil)!
+                viewInfo = UIView.getViewByIdentifier(identifier: hitTestView.identifier)
+                view = viewInfo.0!
+            }
+            
             if let transformView = viewInfo.1 {
                 if touch.phase == .began {
                     holdingViews[transformView.identifier] = transformView
@@ -28,7 +35,10 @@ public class SRGPlayer: NSObject {
                     
                     if transformView is UIScrollView {
                         let scrollView = transformView as! UIScrollView
-                        scrollView.setContentOffset([0, scrollView.contentOffset.y + touch.deltPoint.y], animated: false)
+                        scrollView.setContentOffset([0, scrollView.contentOffset.y - touch.deltPoint.y], animated: false)
+                    } else if transformView is WKWebView {
+                        let scrollView = (transformView as! WKWebView).scrollView
+                        scrollView.setContentOffset([0, scrollView.contentOffset.y - touch.deltPoint.y], animated: false)
                     }
                 } else if touch.phase == .ended {
                     if !holdingViews.keys.contains(transformView.identifier) {
@@ -59,16 +69,15 @@ public class SRGPlayer: NSObject {
                 uitouch.setPhaseAndUpdateTimestamp(touch.phase)
                 uitouches.append(uitouch)
             }
+            
+            let uievent = UIApplication.shared._touchesEvent()!
+            uievent._clearTouches()
+            uievent.srg_setEvent(withTouches: uitouches)
+            uitouches.forEach { (touch) in
+                uievent._add(touch, forDelayedDelivery: false)
+            }
+            UIApplication.shared.sendEvent(uievent)
         }
-        
-        let uievent = UIApplication.shared._touchesEvent()!
-        uievent._clearTouches()
-        uievent.srg_setEvent(withTouches: uitouches)
-        uitouches.forEach { (touch) in
-            uievent._add(touch, forDelayedDelivery: false)
-        }
-        UIApplication.shared.sendEvent(uievent)
-        
         
         guard let index = events.index(of: event),
             index != events.count - 1 else {
