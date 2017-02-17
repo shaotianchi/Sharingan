@@ -1,0 +1,10 @@
+framework module SharinganModel {
+  umbrella header "SharinganModel.h"
+
+  export *
+  module * { export * }
+}
+
+module SharinganModel.Swift {
+    header "SharinganModel-Swift.h"
+}

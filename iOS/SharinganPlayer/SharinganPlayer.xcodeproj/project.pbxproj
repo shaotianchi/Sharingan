@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ECA2BC61E54997B0082DD28 /* SharinganPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECA2BC41E54997B0082DD28 /* SharinganPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ECA2BD21E5499B10082DD28 /* UITouch+Synthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECA2BD01E5499B10082DD28 /* UITouch+Synthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ECA2BD31E5499B10082DD28 /* UITouch+Synthesize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2BD11E5499B10082DD28 /* UITouch+Synthesize.m */; };
+		7ECA2BD51E5499BB0082DD28 /* SRGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2BD41E5499BB0082DD28 /* SRGPlayer.swift */; };
+		7ECA2BDA1E55429D0082DD28 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BD91E55429D0082DD28 /* IOKit.framework */; };
+		7ECA2BFA1E554DC10082DD28 /* SharinganModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BF91E554DC10082DD28 /* SharinganModel.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7ECA2BC11E54997B0082DD28 /* SharinganPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharinganPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECA2BC41E54997B0082DD28 /* SharinganPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharinganPlayer.h; sourceTree = "<group>"; };
+		7ECA2BC51E54997B0082DD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECA2BD01E5499B10082DD28 /* UITouch+Synthesize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+Synthesize.h"; sourceTree = "<group>"; };
+		7ECA2BD11E5499B10082DD28 /* UITouch+Synthesize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+Synthesize.m"; sourceTree = "<group>"; };
+		7ECA2BD41E5499BB0082DD28 /* SRGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGPlayer.swift; sourceTree = "<group>"; };
+		7ECA2BD91E55429D0082DD28 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		7ECA2BF91E554DC10082DD28 /* SharinganModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharinganModel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Sharingan-iOS-fwhlzfphckwzalbsxsjpaxjkytvp/Build/Products/Debug-iphonesimulator/SharinganModel.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ECA2BBD1E54997B0082DD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECA2BFA1E554DC10082DD28 /* SharinganModel.framework in Frameworks */,
+				7ECA2BDA1E55429D0082DD28 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ECA2BB71E54997B0082DD28 = {
+			isa = PBXGroup;
+			children = (
+				7ECA2BC31E54997B0082DD28 /* SharinganPlayer */,
+				7ECA2BC21E54997B0082DD28 /* Products */,
+				7ECA2BCC1E54998E0082DD28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7ECA2BC21E54997B0082DD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2BC11E54997B0082DD28 /* SharinganPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ECA2BC31E54997B0082DD28 /* SharinganPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2BD41E5499BB0082DD28 /* SRGPlayer.swift */,
+				7ECA2BD01E5499B10082DD28 /* UITouch+Synthesize.h */,
+				7ECA2BD11E5499B10082DD28 /* UITouch+Synthesize.m */,
+				7ECA2BC41E54997B0082DD28 /* SharinganPlayer.h */,
+				7ECA2BC51E54997B0082DD28 /* Info.plist */,
+			);
+			path = SharinganPlayer;
+			sourceTree = "<group>";
+		};
+		7ECA2BCC1E54998E0082DD28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ECA2BF91E554DC10082DD28 /* SharinganModel.framework */,
+				7ECA2BD91E55429D0082DD28 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7ECA2BBE1E54997B0082DD28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECA2BC61E54997B0082DD28 /* SharinganPlayer.h in Headers */,
+				7ECA2BD21E5499B10082DD28 /* UITouch+Synthesize.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7ECA2BC01E54997B0082DD28 /* SharinganPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ECA2BC91E54997B0082DD28 /* Build configuration list for PBXNativeTarget "SharinganPlayer" */;
+			buildPhases = (
+				7ECA2BBC1E54997B0082DD28 /* Sources */,
+				7ECA2BBD1E54997B0082DD28 /* Frameworks */,
+				7ECA2BBE1E54997B0082DD28 /* Headers */,
+				7ECA2BBF1E54997B0082DD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharinganPlayer;
+			productName = SharinganPlayer;
+			productReference = 7ECA2BC11E54997B0082DD28 /* SharinganPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ECA2BB81E54997B0082DD28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shao Tianchi";
+				TargetAttributes = {
+					7ECA2BC01E54997B0082DD28 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JL5DG96Y3E;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7ECA2BBB1E54997B0082DD28 /* Build configuration list for PBXProject "SharinganPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7ECA2BB71E54997B0082DD28;
+			productRefGroup = 7ECA2BC21E54997B0082DD28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ECA2BC01E54997B0082DD28 /* SharinganPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ECA2BBF1E54997B0082DD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ECA2BBC1E54997B0082DD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECA2BD31E5499B10082DD28 /* UITouch+Synthesize.m in Sources */,
+				7ECA2BD51E5499BB0082DD28 /* SRGPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7ECA2BC71E54997B0082DD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7ECA2BC81E54997B0082DD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7ECA2BCA1E54997B0082DD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JL5DG96Y3E;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SharinganPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rainbow.sharingan.SharinganPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7ECA2BCB1E54997B0082DD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JL5DG96Y3E;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SharinganPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rainbow.sharingan.SharinganPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ECA2BBB1E54997B0082DD28 /* Build configuration list for PBXProject "SharinganPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECA2BC71E54997B0082DD28 /* Debug */,
+				7ECA2BC81E54997B0082DD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ECA2BC91E54997B0082DD28 /* Build configuration list for PBXNativeTarget "SharinganPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ECA2BCA1E54997B0082DD28 /* Debug */,
+				7ECA2BCB1E54997B0082DD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ECA2BB81E54997B0082DD28 /* Project object */;
+}

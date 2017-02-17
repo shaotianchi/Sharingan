@@ -40,6 +40,7 @@ public class SRGTouch: NSObject, NSCoding {
         self.phase = UITouchPhase(rawValue: aDecoder.decodeInteger(forKey: "phase"))!
         self.viewIdentifier = aDecoder.decodeObject(forKey: "viewID") as! String
         self.haveView = aDecoder.decodeBool(forKey: "haveView")
+        self.deltPoint = aDecoder.decodeCGPoint(forKey: "deltPoint")
     }
     
     public func encode(with aCoder: NSCoder) {
@@ -47,5 +48,6 @@ public class SRGTouch: NSObject, NSCoding {
         aCoder.encode(phase.rawValue, forKey: "phase")
         aCoder.encode(viewIdentifier, forKey: "viewID")
         aCoder.encode(haveView, forKey:"haveView")
+        aCoder.encode(deltPoint, forKey: "deltPoint")
     }
 }
