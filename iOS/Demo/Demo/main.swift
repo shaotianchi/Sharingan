@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SharinganRecorder
 
 UIApplicationMain(CommandLine.argc,
                   UnsafeMutableRawPointer(CommandLine.unsafeArgv)

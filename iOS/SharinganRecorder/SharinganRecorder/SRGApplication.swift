@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SRGApplication: UIApplication {
-    override func sendEvent(_ event: UIEvent) {
-        if SRGRecorder.shared.state == .recoding {
+public class SRGApplication: UIApplication {
+    override public func sendEvent(_ event: UIEvent) {
+        if SRGRecorder.shared.state == .recoding && NSStringFromClass(event.classForCoder) == "UITouchesEvent" {
             SRGRecorder.shared.record(event: event)
         }
         
