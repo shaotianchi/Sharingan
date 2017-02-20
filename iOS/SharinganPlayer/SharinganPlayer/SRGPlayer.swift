@@ -73,15 +73,16 @@ public class SRGPlayer: NSObject {
                 uitouch.setPhaseAndUpdateTimestamp(touch.phase)
                 uitouches.append(uitouch)
             }
-            
-            let uievent = UIApplication.shared._touchesEvent()!
-            uievent._clearTouches()
-            uievent.srg_setEvent(withTouches: uitouches)
-            uitouches.forEach { (touch) in
-                uievent._add(touch, forDelayedDelivery: false)
-            }
-            UIApplication.shared.sendEvent(uievent)
         }
+        
+        let uievent = UIApplication.shared._touchesEvent()!
+        uievent._clearTouches()
+        uievent.srg_setEvent(withTouches: uitouches)
+        uitouches.forEach { (touch) in
+            uievent._add(touch, forDelayedDelivery: false)
+        }
+        
+        UIApplication.shared.sendEvent(uievent)
         
         guard let index = events.index(of: event),
             index != events.count - 1 else {

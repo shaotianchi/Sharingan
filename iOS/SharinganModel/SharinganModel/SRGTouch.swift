@@ -14,8 +14,10 @@ public class SRGTouch: NSObject, NSCoding {
     public var viewIdentifier: String = ""
     public var haveView: Bool = false
     public var deltPoint: CGPoint = .zero
+    public var id: String
     
     public init(touch: UITouch) {
+        self.id = String(format: "%p", touch)
         if let view = touch.view {
             self.point = touch.location(in: view)
             self.viewIdentifier = view.identifier
@@ -41,6 +43,7 @@ public class SRGTouch: NSObject, NSCoding {
         self.viewIdentifier = aDecoder.decodeObject(forKey: "viewID") as! String
         self.haveView = aDecoder.decodeBool(forKey: "haveView")
         self.deltPoint = aDecoder.decodeCGPoint(forKey: "deltPoint")
+        self.id = aDecoder.decodeObject(forKey: "id") as! String
     }
     
     public func encode(with aCoder: NSCoder) {
@@ -49,5 +52,6 @@ public class SRGTouch: NSObject, NSCoding {
         aCoder.encode(viewIdentifier, forKey: "viewID")
         aCoder.encode(haveView, forKey:"haveView")
         aCoder.encode(deltPoint, forKey: "deltPoint")
+        aCoder.encode(id, forKey: "id")
     }
 }

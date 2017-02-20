@@ -225,7 +225,6 @@ typedef struct {
         return nil;
     }
     
-    // Create a fake tap touch
     [self setWindow:window]; // Wipes out some values.  Needs to be first.
     
     [self setTapCount:1];
