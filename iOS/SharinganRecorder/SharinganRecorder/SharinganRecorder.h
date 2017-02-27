@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SharinganModel/SharinganModel.h>
+//#import <SharinganModel/SharinganModel.h>
 
 //! Project version number for SharinganRecorder.
 FOUNDATION_EXPORT double SharinganRecorderVersionNumber;

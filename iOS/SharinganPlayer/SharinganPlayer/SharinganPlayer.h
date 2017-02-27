@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <SharinganModel/SharinganModel.h>
 #import <SharinganPlayer/UITouch+Synthesize.h>
 
 //! Project version number for SharinganPlayer.
