@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Recorder'
 
   s.subspec 'Model' do |ss|
-    ss.source_files = "iOS/SharinganModel/**/*.{h,swift}"
+    ss.source_files = "iOS/SharinganModel/SharinganModel/*.{h,swift}"
   end
 
   s.subspec 'Recorder' do |ss| 
-    ss.source_files = "iOS/SharinganRecorder/**/*.{h,swift}"
+    ss.source_files = "iOS/SharinganRecorder/SharinganRecorder/*.{h,swift}"
   end 
 end

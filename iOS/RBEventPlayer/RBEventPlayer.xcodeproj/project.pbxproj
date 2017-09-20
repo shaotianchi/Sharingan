@@ -12,6 +12,7 @@
 		7E5B84961F72805A008787FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B84941F72805A008787FB /* Main.storyboard */; };
 		7E5B84981F72805A008787FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B84971F72805A008787FB /* Assets.xcassets */; };
 		7E5B849B1F72805A008787FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B84991F72805A008787FB /* LaunchScreen.storyboard */; };
+		7E5B84A31F729E3E008787FB /* RBEventReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B84A21F729E3E008787FB /* RBEventReceiver.swift */; };
 		FE4CF2C9B2585FE00C5E3319 /* Pods_RBEventPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075727827D89FC0559E49BBC /* Pods_RBEventPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		7E5B84971F72805A008787FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5B849A1F72805A008787FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5B849C1F72805B008787FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5B84A21F729E3E008787FB /* RBEventReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBEventReceiver.swift; sourceTree = "<group>"; };
 		B8680DD77E9DD8492BF7C77F /* Pods-RBEventPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBEventPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBEventPlayer/Pods-RBEventPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				7E5B84971F72805A008787FB /* Assets.xcassets */,
 				7E5B84991F72805A008787FB /* LaunchScreen.storyboard */,
 				7E5B849C1F72805B008787FB /* Info.plist */,
+				7E5B84A21F729E3E008787FB /* RBEventReceiver.swift */,
 			);
 			path = RBEventPlayer;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5B84A31F729E3E008787FB /* RBEventReceiver.swift in Sources */,
 				7E5B84931F72805A008787FB /* ViewController.swift in Sources */,
 				7E5B84911F72805A008787FB /* AppDelegate.swift in Sources */,
 			);
@@ -385,6 +389,7 @@
 				7E5B84A11F72805B008787FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

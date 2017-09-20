@@ -1,4 +1,5 @@
 target 'RBEventPlayer' do
   use_frameworks!
   pod 'Sharingan'
+  pod 'Sharingan/Model'
 end

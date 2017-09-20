@@ -1,14 +1,16 @@
 PODS:
-  - Sharingan (0.1.2):
-    - Sharingan/Recorder (= 0.1.2)
-  - Sharingan/Recorder (0.1.2)
+  - Sharingan (0.1.3):
+    - Sharingan/Recorder (= 0.1.3)
+  - Sharingan/Model (0.1.3)
+  - Sharingan/Recorder (0.1.3)
 
 DEPENDENCIES:
   - Sharingan
+  - Sharingan/Model
 
 SPEC CHECKSUMS:
-  Sharingan: fa8f59878d2e0f82cb0d5380c1f0f14ec38e7183
+  Sharingan: 07ce1eed0450f6da94516639e73fb134c0877504
 
-PODFILE CHECKSUM: af9839b888b6baaf2725991a62e6420c6f3d8f9c
+PODFILE CHECKSUM: 45e021f513ad6740afd9dc2ee0bb632af53dbc57
 
 COCOAPODS: 1.3.1
