@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol SRGEventReceiver {
+public protocol SRGEventReceiver {
+    var identifier: String { get set }
     func receive(event: UIEvent)
+    func recorderStop()
+    func recorderStart()
 }

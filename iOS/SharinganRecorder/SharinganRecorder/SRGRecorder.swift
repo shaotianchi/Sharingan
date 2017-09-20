@@ -19,14 +19,9 @@ public class SRGRecorder: NSObject {
     
     public static let shared = SRGRecorder()
     
-    fileprivate let savePath = "\(NSTemporaryDirectory())com.rainbow.SRGRecoder"
-    
-    public var ignoreIdentifiers:[String] = []
     var receivers: [SRGEventReceiver] = []
     
     public private(set) var state = SRGRecorderState.idle
-    
-//    fileprivate var events: [SRGEvent] = []
     
     override init() {
         super.init()
@@ -34,34 +29,23 @@ public class SRGRecorder: NSObject {
     
     public func start() {
         state = .recoding
+        receivers.forEach { $0.recorderStart() }
     }
     
     public func pause() {
         state = .pausing
+        receivers.forEach { $0.recorderStop() }
     }
     
-//    public func stopAndSave() {
-//        state = .idle
-//        if !FileManager.default.fileExists(atPath: savePath) {
-//            try? FileManager.default.createDirectory(atPath: savePath, withIntermediateDirectories: false, attributes: nil)
-//        }
-//        NSKeyedArchiver.archiveRootObject(events, toFile: savePath + "/recoder")
-//    }
+    public func add(receiver: SRGEventReceiver) {
+        receivers.append(receiver)
+    }
     
-//    public var lastRecord:[SRGEvent] {
-//        guard FileManager.default.fileExists(atPath: savePath + "/recoder"),
-//            let data = try? Data(contentsOf: URL(fileURLWithPath: savePath + "/recoder")) else {
-//                return []
-//        }
-//        
-//        print("=== start play events ===")
-//        guard let events = NSKeyedUnarchiver.unarchiveObject(with: data) as? [SRGEvent],
-//            events.count > 0 else {
-//                return []
-//        }
-//        
-//        return events
-//    }
+    public func remove(receiver identifier: String) {
+        if let index = receivers.index(where: { $0.identifier == identifier}) {
+            receivers.remove(at: index)
+        }
+    }
 }
 
 public extension SRGRecorder {
@@ -70,13 +54,5 @@ public extension SRGRecorder {
         receivers.forEach {
             $0.receive(event: event)
         }
-        
-        
-//        let iEvent = SRGEvent(event: event)
-//        
-//        if let preEvent = events.last {
-//            preEvent.nextTime = iEvent.time - preEvent.time
-//        }
-//        events.append(iEvent)
     }
 }
