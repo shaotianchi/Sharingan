@@ -36,7 +36,7 @@ public class SRGPlayer: NSObject {
                     
                     var scrollView: UIScrollView? = nil
                     if transformView is UIScrollView {
-                        scrollView = transformView as! UIScrollView
+                        scrollView = (transformView as! UIScrollView)
                     } else if transformView is WKWebView {
                         scrollView = (transformView as! WKWebView).scrollView
                     } else if transformView is UIWebView {

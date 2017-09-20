@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Sharingan"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A UI record and play framework for iOS"
 
   s.homepage     = "https://github.com/shaotianchi/Sharingan"
@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.default_subspec = 'Recorder'
+
   s.subspec 'Model' do |ss|
     ss.source_files = "iOS/SharinganModel/**/*.{h,swift}"
   end
@@ -23,11 +25,4 @@ Pod::Spec.new do |s|
     ss.dependency "Sharingan/Model"
     ss.source_files = "iOS/SharinganRecorder/**/*.{h,swift}"
   end 
-
-  #s.subspec 'Player' do |ss| 
-  # ss.dependency "Sharingan/Model"
-  # ss.source_files = "iOS/SharinganPlayer/**/*.{h,m,swift}"
-  # ss.frameworks = "IOKit"
-  #end 
-
 end

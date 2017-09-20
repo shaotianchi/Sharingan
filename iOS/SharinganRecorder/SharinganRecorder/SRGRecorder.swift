@@ -8,7 +8,6 @@
 
 import UIKit
 import WebKit
-import SharinganModel
 
 public enum SRGRecorderState {
     case idle
@@ -23,10 +22,11 @@ public class SRGRecorder: NSObject {
     fileprivate let savePath = "\(NSTemporaryDirectory())com.rainbow.SRGRecoder"
     
     public var ignoreIdentifiers:[String] = []
+    var receivers: [SRGEventReceiver] = []
     
-    public var state = SRGRecorderState.idle
+    public private(set) var state = SRGRecorderState.idle
     
-    fileprivate var events: [SRGEvent] = []
+//    fileprivate var events: [SRGEvent] = []
     
     override init() {
         super.init()
@@ -40,37 +40,43 @@ public class SRGRecorder: NSObject {
         state = .pausing
     }
     
-    public func stopAndSave() {
-        state = .idle
-        if !FileManager.default.fileExists(atPath: savePath) {
-            try? FileManager.default.createDirectory(atPath: savePath, withIntermediateDirectories: false, attributes: nil)
-        }
-        NSKeyedArchiver.archiveRootObject(events, toFile: savePath + "/recoder")
-    }
+//    public func stopAndSave() {
+//        state = .idle
+//        if !FileManager.default.fileExists(atPath: savePath) {
+//            try? FileManager.default.createDirectory(atPath: savePath, withIntermediateDirectories: false, attributes: nil)
+//        }
+//        NSKeyedArchiver.archiveRootObject(events, toFile: savePath + "/recoder")
+//    }
     
-    public var lastRecord:[SRGEvent] {
-        guard FileManager.default.fileExists(atPath: savePath + "/recoder"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: savePath + "/recoder")) else {
-                return []
-        }
-        
-        print("=== start play events ===")
-        guard let events = NSKeyedUnarchiver.unarchiveObject(with: data) as? [SRGEvent],
-            events.count > 0 else {
-                return []
-        }
-        
-        return events
-    }
+//    public var lastRecord:[SRGEvent] {
+//        guard FileManager.default.fileExists(atPath: savePath + "/recoder"),
+//            let data = try? Data(contentsOf: URL(fileURLWithPath: savePath + "/recoder")) else {
+//                return []
+//        }
+//        
+//        print("=== start play events ===")
+//        guard let events = NSKeyedUnarchiver.unarchiveObject(with: data) as? [SRGEvent],
+//            events.count > 0 else {
+//                return []
+//        }
+//        
+//        return events
+//    }
 }
 
 public extension SRGRecorder {
     func record(event: UIEvent) {
-        let iEvent = SRGEvent(event: event)
         
-        if let preEvent = events.last {
-            preEvent.nextTime = iEvent.time - preEvent.time
+        receivers.forEach {
+            $0.receive(event: event)
         }
-        events.append(iEvent)
+        
+        
+//        let iEvent = SRGEvent(event: event)
+//        
+//        if let preEvent = events.last {
+//            preEvent.nextTime = iEvent.time - preEvent.time
+//        }
+//        events.append(iEvent)
     }
 }

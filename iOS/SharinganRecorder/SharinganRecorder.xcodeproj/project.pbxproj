@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5B84831F7276CD008787FB /* SRGEventReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B84821F7276CD008787FB /* SRGEventReceiver.swift */; };
 		7ECA2B751E5494C20082DD28 /* SharinganRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECA2B731E5494C20082DD28 /* SharinganRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ECA2B7F1E5494D40082DD28 /* SRGApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2B7C1E5494D40082DD28 /* SRGApplication.swift */; };
 		7ECA2B801E5494D40082DD28 /* SRGRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2B7D1E5494D40082DD28 /* SRGRecorder.swift */; };
-		7ECA2BFC1E554DCB0082DD28 /* SharinganModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BFB1E554DCB0082DD28 /* SharinganModel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E5B84821F7276CD008787FB /* SRGEventReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGEventReceiver.swift; sourceTree = "<group>"; };
 		7ECA2B701E5494C20082DD28 /* SharinganRecorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharinganRecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECA2B731E5494C20082DD28 /* SharinganRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharinganRecorder.h; sourceTree = "<group>"; };
 		7ECA2B741E5494C20082DD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECA2BFC1E554DCB0082DD28 /* SharinganModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +58,7 @@
 				7ECA2B7D1E5494D40082DD28 /* SRGRecorder.swift */,
 				7ECA2B731E5494C20082DD28 /* SharinganRecorder.h */,
 				7ECA2B741E5494C20082DD28 /* Info.plist */,
+				7E5B84821F7276CD008787FB /* SRGEventReceiver.swift */,
 			);
 			path = SharinganRecorder;
 			sourceTree = "<group>";
@@ -151,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5B84831F7276CD008787FB /* SRGEventReceiver.swift in Sources */,
 				7ECA2B801E5494D40082DD28 /* SRGRecorder.swift in Sources */,
 				7ECA2B7F1E5494D40082DD28 /* SRGApplication.swift in Sources */,
 			);
