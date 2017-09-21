@@ -12,7 +12,10 @@
 		7E5B84961F72805A008787FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B84941F72805A008787FB /* Main.storyboard */; };
 		7E5B84981F72805A008787FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B84971F72805A008787FB /* Assets.xcassets */; };
 		7E5B849B1F72805A008787FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B84991F72805A008787FB /* LaunchScreen.storyboard */; };
-		7E5B84A31F729E3E008787FB /* RBEventReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B84A21F729E3E008787FB /* RBEventReceiver.swift */; };
+		7E5B84A61F72A4EA008787FB /* RBEventReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B84A51F72A4EA008787FB /* RBEventReceiver.swift */; };
+		7E5B84AB1F72A4FC008787FB /* SRGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B84A81F72A4FC008787FB /* SRGPlayer.swift */; };
+		7E5B84AC1F72A4FC008787FB /* UITouch+Synthesize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B84AA1F72A4FC008787FB /* UITouch+Synthesize.m */; };
+		7E5B84AF1F72A5AB008787FB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5B84AE1F72A5AB008787FB /* IOKit.framework */; };
 		FE4CF2C9B2585FE00C5E3319 /* Pods_RBEventPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075727827D89FC0559E49BBC /* Pods_RBEventPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +29,12 @@
 		7E5B84971F72805A008787FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5B849A1F72805A008787FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5B849C1F72805B008787FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E5B84A21F729E3E008787FB /* RBEventReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBEventReceiver.swift; sourceTree = "<group>"; };
+		7E5B84A51F72A4EA008787FB /* RBEventReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBEventReceiver.swift; sourceTree = "<group>"; };
+		7E5B84A81F72A4FC008787FB /* SRGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGPlayer.swift; sourceTree = "<group>"; };
+		7E5B84A91F72A4FC008787FB /* UITouch+Synthesize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+Synthesize.h"; sourceTree = "<group>"; };
+		7E5B84AA1F72A4FC008787FB /* UITouch+Synthesize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+Synthesize.m"; sourceTree = "<group>"; };
+		7E5B84AD1F72A51B008787FB /* RBEventPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBEventPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		7E5B84AE1F72A5AB008787FB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		B8680DD77E9DD8492BF7C77F /* Pods-RBEventPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBEventPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBEventPlayer/Pods-RBEventPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4CF2C9B2585FE00C5E3319 /* Pods_RBEventPlayer.framework in Frameworks */,
+				7E5B84AF1F72A5AB008787FB /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,7 @@
 		7E5B84841F72805A008787FB = {
 			isa = PBXGroup;
 			children = (
+				7E5B84A41F72A4DF008787FB /* Sources */,
 				7E5B848F1F72805A008787FB /* RBEventPlayer */,
 				7E5B848E1F72805A008787FB /* Products */,
 				823CE2855D4A766CD9B84258 /* Pods */,
@@ -63,15 +73,26 @@
 		7E5B848F1F72805A008787FB /* RBEventPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7E5B84AD1F72A51B008787FB /* RBEventPlayer-Bridging-Header.h */,
 				7E5B84901F72805A008787FB /* AppDelegate.swift */,
 				7E5B84921F72805A008787FB /* ViewController.swift */,
 				7E5B84941F72805A008787FB /* Main.storyboard */,
 				7E5B84971F72805A008787FB /* Assets.xcassets */,
 				7E5B84991F72805A008787FB /* LaunchScreen.storyboard */,
 				7E5B849C1F72805B008787FB /* Info.plist */,
-				7E5B84A21F729E3E008787FB /* RBEventReceiver.swift */,
 			);
 			path = RBEventPlayer;
+			sourceTree = "<group>";
+		};
+		7E5B84A41F72A4DF008787FB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7E5B84A81F72A4FC008787FB /* SRGPlayer.swift */,
+				7E5B84A91F72A4FC008787FB /* UITouch+Synthesize.h */,
+				7E5B84AA1F72A4FC008787FB /* UITouch+Synthesize.m */,
+				7E5B84A51F72A4EA008787FB /* RBEventReceiver.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		823CE2855D4A766CD9B84258 /* Pods */ = {
@@ -86,6 +107,7 @@
 		98F57A47E3D52B6895D46387 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E5B84AE1F72A5AB008787FB /* IOKit.framework */,
 				075727827D89FC0559E49BBC /* Pods_RBEventPlayer.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +149,7 @@
 					7E5B848C1F72805A008787FB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = JL5DG96Y3E;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -221,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5B84A31F729E3E008787FB /* RBEventReceiver.swift in Sources */,
 				7E5B84931F72805A008787FB /* ViewController.swift in Sources */,
 				7E5B84911F72805A008787FB /* AppDelegate.swift in Sources */,
+				7E5B84A61F72A4EA008787FB /* RBEventReceiver.swift in Sources */,
+				7E5B84AC1F72A4FC008787FB /* UITouch+Synthesize.m in Sources */,
+				7E5B84AB1F72A4FC008787FB /* SRGPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +372,14 @@
 			baseConfigurationReference = B8680DD77E9DD8492BF7C77F /* Pods-RBEventPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JL5DG96Y3E;
 				INFOPLIST_FILE = RBEventPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainbow.RBEventPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RBEventPlayer/RBEventPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -361,11 +389,13 @@
 			baseConfigurationReference = 6FDAD7B5AA3A8A1095095A94 /* Pods-RBEventPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JL5DG96Y3E;
 				INFOPLIST_FILE = RBEventPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rainbow.RBEventPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RBEventPlayer/RBEventPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

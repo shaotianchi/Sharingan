@@ -1,15 +1,15 @@
 PODS:
-  - Sharingan (0.1.3):
-    - Sharingan/Recorder (= 0.1.3)
-  - Sharingan/Model (0.1.3)
-  - Sharingan/Recorder (0.1.3)
+  - Sharingan (0.1.4):
+    - Sharingan/Recorder (= 0.1.4)
+  - Sharingan/Model (0.1.4)
+  - Sharingan/Recorder (0.1.4)
 
 DEPENDENCIES:
   - Sharingan
   - Sharingan/Model
 
 SPEC CHECKSUMS:
-  Sharingan: 07ce1eed0450f6da94516639e73fb134c0877504
+  Sharingan: b2e2950f32ceccf763475ceaedfb8e9f37686335
 
 PODFILE CHECKSUM: 45e021f513ad6740afd9dc2ee0bb632af53dbc57
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Sharingan"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "A UI record and play framework for iOS"
 
   s.homepage     = "https://github.com/shaotianchi/Sharingan"
