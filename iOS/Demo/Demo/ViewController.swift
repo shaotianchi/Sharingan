@@ -23,12 +23,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func play(_ sender: Any) {
-        let events = SRGRecorder.shared.lastRecord
-        guard events.count > 0 else {
-            return
-        }
-        
-        SRGPlayer().play(event: events[0], events: events)
+        SRGPlayer.shared.playFromLocal()
+//        let events = SRGRecorder.shared.lastRecord
+//        guard events.count > 0 else {
+//            return
+//        }
+//
+//        SRGPlayer().play(event: events[0], events: events)
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         if SRGRecorder.shared.state == .idle {
             SRGRecorder.shared.start()
         } else if SRGRecorder.shared.state == .recoding {
-            SRGRecorder.shared.stopAndSave()
+            SRGRecorder.shared.pause()
         }
     }
 }

@@ -8,12 +8,21 @@
 
 import UIKit
 import WebKit
-import SharinganModel
 
 public class SRGPlayer: NSObject {
-    var holdingViews:[String: UIView] = [:]
     
-    public func play(event: SRGEvent, events: [SRGEvent]) {
+    public static let shared = SRGPlayer()
+    
+    public func playFromLocal() {
+        let savePath = "\(NSTemporaryDirectory())com.rainbow.SRGPlayer/player_events"
+        guard let events = NSKeyedUnarchiver.unarchiveObject(withFile: savePath) as? [SRGEvent] else { return }
+        self.play(events: events, at: 0)
+    }
+    
+    var holdingViews = [String : UIView]()
+    
+    public func play(events: [SRGEvent], at index: Int) {
+        let event = events[index]
         let touches = event.touches
         var uitouches: [UITouch] = []
         for touch in touches {
@@ -84,13 +93,12 @@ public class SRGPlayer: NSObject {
         
         UIApplication.shared.sendEvent(uievent)
         
-        guard let index = events.index(of: event),
-            index != events.count - 1 else {
+        guard index != events.count - 1 else {
                 return
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + event.nextTime) {
-            self.play(event: events[index + 1], events: events)
+            self.play(events: events, at: index + 1)
         }
     }
 }

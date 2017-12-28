@@ -50,7 +50,6 @@ public class SRGRecorder: NSObject {
 
 public extension SRGRecorder {
     func record(event: UIEvent) {
-        
         receivers.forEach {
             $0.receive(event: event)
         }

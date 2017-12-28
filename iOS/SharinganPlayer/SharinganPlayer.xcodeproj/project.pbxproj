@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17618EFC1FF47CB900B20250 /* SRGPlayerEventReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17618EFB1FF47CB900B20250 /* SRGPlayerEventReceiver.swift */; };
+		17618F0A1FF47DF900B20250 /* CGPoint+ArrayLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17618F051FF47DF800B20250 /* CGPoint+ArrayLiteral.swift */; };
+		17618F0B1FF47DF900B20250 /* SRGEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17618F061FF47DF800B20250 /* SRGEvent.swift */; };
+		17618F0C1FF47DF900B20250 /* SRGTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17618F071FF47DF800B20250 /* SRGTouch.swift */; };
+		17618F0D1FF47DF900B20250 /* UIView+SRGAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17618F081FF47DF800B20250 /* UIView+SRGAddition.swift */; };
+		17618F0E1FF47DF900B20250 /* CGSize+ArrayLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17618F091FF47DF900B20250 /* CGSize+ArrayLiteral.swift */; };
+		17618F0F1FF47EA500B20250 /* SharinganRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17618F031FF47D6400B20250 /* SharinganRecorder.framework */; };
 		7ECA2BC61E54997B0082DD28 /* SharinganPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECA2BC41E54997B0082DD28 /* SharinganPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ECA2BD21E5499B10082DD28 /* UITouch+Synthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECA2BD01E5499B10082DD28 /* UITouch+Synthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ECA2BD31E5499B10082DD28 /* UITouch+Synthesize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2BD11E5499B10082DD28 /* UITouch+Synthesize.m */; };
 		7ECA2BD51E5499BB0082DD28 /* SRGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2BD41E5499BB0082DD28 /* SRGPlayer.swift */; };
 		7ECA2BDA1E55429D0082DD28 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BD91E55429D0082DD28 /* IOKit.framework */; };
-		7ECA2BFA1E554DC10082DD28 /* SharinganModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BF91E554DC10082DD28 /* SharinganModel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17618EFB1FF47CB900B20250 /* SRGPlayerEventReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRGPlayerEventReceiver.swift; sourceTree = "<group>"; };
+		17618F031FF47D6400B20250 /* SharinganRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharinganRecorder.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Sharingan-iOS-awbpiuuwarrojyfyjawqsebhsfyl/Build/Products/Debug-iphonesimulator/SharinganRecorder.framework"; sourceTree = "<group>"; };
+		17618F051FF47DF800B20250 /* CGPoint+ArrayLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGPoint+ArrayLiteral.swift"; path = "../../SharinganModel/SharinganModel/CGPoint+ArrayLiteral.swift"; sourceTree = "<group>"; };
+		17618F061FF47DF800B20250 /* SRGEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRGEvent.swift; path = ../../SharinganModel/SharinganModel/SRGEvent.swift; sourceTree = "<group>"; };
+		17618F071FF47DF800B20250 /* SRGTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRGTouch.swift; path = ../../SharinganModel/SharinganModel/SRGTouch.swift; sourceTree = "<group>"; };
+		17618F081FF47DF800B20250 /* UIView+SRGAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+SRGAddition.swift"; path = "../../SharinganModel/SharinganModel/UIView+SRGAddition.swift"; sourceTree = "<group>"; };
+		17618F091FF47DF900B20250 /* CGSize+ArrayLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGSize+ArrayLiteral.swift"; path = "../../SharinganModel/SharinganModel/CGSize+ArrayLiteral.swift"; sourceTree = "<group>"; };
 		7ECA2BC11E54997B0082DD28 /* SharinganPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharinganPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECA2BC41E54997B0082DD28 /* SharinganPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharinganPlayer.h; sourceTree = "<group>"; };
 		7ECA2BC51E54997B0082DD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -23,7 +36,6 @@
 		7ECA2BD11E5499B10082DD28 /* UITouch+Synthesize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+Synthesize.m"; sourceTree = "<group>"; };
 		7ECA2BD41E5499BB0082DD28 /* SRGPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRGPlayer.swift; sourceTree = "<group>"; };
 		7ECA2BD91E55429D0082DD28 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
-		7ECA2BF91E554DC10082DD28 /* SharinganModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharinganModel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Sharingan-iOS-fwhlzfphckwzalbsxsjpaxjkytvp/Build/Products/Debug-iphonesimulator/SharinganModel.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECA2BFA1E554DC10082DD28 /* SharinganModel.framework in Frameworks */,
 				7ECA2BDA1E55429D0082DD28 /* IOKit.framework in Frameworks */,
+				17618F0F1FF47EA500B20250 /* SharinganRecorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,11 +71,17 @@
 		7ECA2BC31E54997B0082DD28 /* SharinganPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				17618F051FF47DF800B20250 /* CGPoint+ArrayLiteral.swift */,
+				17618F091FF47DF900B20250 /* CGSize+ArrayLiteral.swift */,
+				17618F061FF47DF800B20250 /* SRGEvent.swift */,
+				17618F071FF47DF800B20250 /* SRGTouch.swift */,
+				17618F081FF47DF800B20250 /* UIView+SRGAddition.swift */,
 				7ECA2BD41E5499BB0082DD28 /* SRGPlayer.swift */,
 				7ECA2BD01E5499B10082DD28 /* UITouch+Synthesize.h */,
 				7ECA2BD11E5499B10082DD28 /* UITouch+Synthesize.m */,
 				7ECA2BC41E54997B0082DD28 /* SharinganPlayer.h */,
 				7ECA2BC51E54997B0082DD28 /* Info.plist */,
+				17618EFB1FF47CB900B20250 /* SRGPlayerEventReceiver.swift */,
 			);
 			path = SharinganPlayer;
 			sourceTree = "<group>";
@@ -71,7 +89,7 @@
 		7ECA2BCC1E54998E0082DD28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7ECA2BF91E554DC10082DD28 /* SharinganModel.framework */,
+				17618F031FF47D6400B20250 /* SharinganRecorder.framework */,
 				7ECA2BD91E55429D0082DD28 /* IOKit.framework */,
 			);
 			name = Frameworks;
@@ -159,7 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17618F0E1FF47DF900B20250 /* CGSize+ArrayLiteral.swift in Sources */,
+				17618F0B1FF47DF900B20250 /* SRGEvent.swift in Sources */,
+				17618F0A1FF47DF900B20250 /* CGPoint+ArrayLiteral.swift in Sources */,
 				7ECA2BD31E5499B10082DD28 /* UITouch+Synthesize.m in Sources */,
+				17618F0D1FF47DF900B20250 /* UIView+SRGAddition.swift in Sources */,
+				17618EFC1FF47CB900B20250 /* SRGPlayerEventReceiver.swift in Sources */,
+				17618F0C1FF47DF900B20250 /* SRGTouch.swift in Sources */,
 				7ECA2BD51E5499BB0082DD28 /* SRGPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

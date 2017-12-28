@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17618F131FF4871C00B20250 /* SharinganPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17618F111FF4871C00B20250 /* SharinganPlayer.framework */; };
+		17618F141FF4871C00B20250 /* SharinganRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17618F121FF4871C00B20250 /* SharinganRecorder.framework */; };
 		7ECA2B401E5492DC0082DD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2B3F1E5492DC0082DD28 /* AppDelegate.swift */; };
 		7ECA2B421E5492DC0082DD28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2B411E5492DC0082DD28 /* ViewController.swift */; };
 		7ECA2B451E5492DC0082DD28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECA2B431E5492DC0082DD28 /* Main.storyboard */; };
 		7ECA2B471E5492DC0082DD28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECA2B461E5492DC0082DD28 /* Assets.xcassets */; };
 		7ECA2B4A1E5492DC0082DD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECA2B481E5492DC0082DD28 /* LaunchScreen.storyboard */; };
 		7ECA2BF41E55494C0082DD28 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2BF31E55494C0082DD28 /* WebViewController.swift */; };
-		7ECA2BFF1E554DF50082DD28 /* SharinganPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BFD1E554DF50082DD28 /* SharinganPlayer.framework */; };
-		7ECA2C001E554DF50082DD28 /* SharinganRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA2BFE1E554DF50082DD28 /* SharinganRecorder.framework */; };
 		7ECA2C021E554E9B0082DD28 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2C011E554E9B0082DD28 /* main.swift */; };
 		7ECA2C061E55ABBB0082DD28 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECA2C051E55ABBB0082DD28 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17618F111FF4871C00B20250 /* SharinganPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharinganPlayer.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Sharingan-iOS-awbpiuuwarrojyfyjawqsebhsfyl/Build/Products/Debug-iphonesimulator/SharinganPlayer.framework"; sourceTree = "<group>"; };
+		17618F121FF4871C00B20250 /* SharinganRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharinganRecorder.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Sharingan-iOS-awbpiuuwarrojyfyjawqsebhsfyl/Build/Products/Debug-iphonesimulator/SharinganRecorder.framework"; sourceTree = "<group>"; };
 		7ECA2B3C1E5492DC0082DD28 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECA2B3F1E5492DC0082DD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ECA2B411E5492DC0082DD28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECA2BFF1E554DF50082DD28 /* SharinganPlayer.framework in Frameworks */,
-				7ECA2C001E554DF50082DD28 /* SharinganRecorder.framework in Frameworks */,
+				17618F131FF4871C00B20250 /* SharinganPlayer.framework in Frameworks */,
+				17618F141FF4871C00B20250 /* SharinganRecorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,8 @@
 		7ECA2B511E5493990082DD28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17618F111FF4871C00B20250 /* SharinganPlayer.framework */,
+				17618F121FF4871C00B20250 /* SharinganRecorder.framework */,
 				7ECA2BFD1E554DF50082DD28 /* SharinganPlayer.framework */,
 				7ECA2BFE1E554DF50082DD28 /* SharinganRecorder.framework */,
 			);

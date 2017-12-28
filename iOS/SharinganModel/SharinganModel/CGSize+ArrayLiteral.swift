@@ -14,3 +14,4 @@ extension CGSize: ExpressibleByArrayLiteral {
         self.init(width: elements[0], height: elements[1])
     }
 }
+

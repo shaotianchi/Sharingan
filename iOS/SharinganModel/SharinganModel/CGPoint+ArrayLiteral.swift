@@ -14,3 +14,4 @@ extension CGPoint: ExpressibleByArrayLiteral {
         self.init(x: elements[0], y: elements[1])
     }
 }
+
